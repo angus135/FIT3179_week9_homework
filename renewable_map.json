@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Australian Renewable Energy Installations Over 10 Mega Watts",
+  "title": "Australian Renewable Energy Installations Over 10 Mega Watts (2024)",
   "width": 800,
   "height": 600,
   "background": "#cce6ff",  
@@ -101,11 +101,16 @@
             }
         },
         "tooltip": [
-          {"field": "Power station name", "type": "nominal"},
-          {"field": "Fuel source(s)", "type": "nominal"},
-          {"field": "Installed capacity", "type": "quantitative", "format": ".1f"},
-          {"field": "State", "type": "nominal"},
-          {"field": "Postcode", "type": "ordinal"}
+            {"field": "Power station name", "type": "nominal"},
+            {"field": "Fuel source(s)", "type": "nominal"},
+            {
+                "field": "Installed capacity",
+                "type": "quantitative",
+                "format": ".1f",
+                "title": "Installed capacity (MW)"
+            },
+            {"field": "State", "type": "nominal"},
+            {"field": "Postcode", "type": "ordinal"}
         ]
       }
     }
